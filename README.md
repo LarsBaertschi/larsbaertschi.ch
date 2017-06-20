@@ -1,2 +1,2 @@
 # larsbaertschi.ch
-Website larsbaertschi.ch
+Website https://larsbaertschi.ch
