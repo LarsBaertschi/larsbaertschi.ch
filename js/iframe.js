@@ -3,8 +3,6 @@ var playerId;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    //height: '390',
-    //width: '640',
 
     playerVars: {
       'controls': 0,
@@ -24,6 +22,10 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.setLoop(true);
   event.target.playVideo();
+  // Player playing, hide image
+  setTimeout(function() {
+    $(".image-background").addClass("fadeout");
+  }, 1000);
 }
 
 function onPlayerStateChange(event) {

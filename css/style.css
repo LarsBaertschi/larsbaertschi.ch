@@ -11,6 +11,10 @@ body {
   font-family: sans-serif;
 }
 
+h2 {
+  font-weight: normal;
+}
+
 .page-title {
   color: black;
   font-size: 6vh;
@@ -22,7 +26,8 @@ body {
 }
 
 .image-background {
-  background: url(../img/berge.jpg) no-repeat center center fixed;
+  position: absolute;
+  background: url(../img/berge.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +39,7 @@ body {
 .content {
   position: absolute;
   margin-top: 85vh;
-  height: 80vh;
+  min-height: 80vh;
   background-color: white;
   z-index: 100;
   width: 100%;
@@ -42,9 +47,31 @@ body {
 }
 
 .block {
-    width: 50%;
-    float: left;
-    padding-right: 30px;
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+  text-align: justify;
+}
+
+.example-block {
+  width: 200px;
+  height: 200px;
+  background-color: #cdcdcd;
+  float: left;
+  margin-right: 20px;
+  display: block;
+}
+
+.example-block-image {
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.examples {
+  margin-top: 40px;
 }
 
 .text-title {
@@ -59,6 +86,27 @@ body {
   clear: both;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+.fadeout {
+  opacity: 0;
+  animation: fade 1s linear;
+}
+
 #player {
   height: 100%;
+}
+
+@media all and (max-width: 900px) {
+  .block {
+    float: none;
+    width: 100%;
+  }
 }
