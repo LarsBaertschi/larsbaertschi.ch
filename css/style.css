@@ -41,6 +41,12 @@ body {
   padding-left: 2%;
 }
 
+.block {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+}
+
 .text-title {
   font-size: 24px;
 }
