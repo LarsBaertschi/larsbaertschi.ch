@@ -2,21 +2,23 @@ var player;
 var playerId;
 
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
+  if (document.documentElement.clientWidth > 480) {
+    player = new YT.Player('player', {
 
-    playerVars: {
-      'controls': 0,
-      'showinfo': 0,
-      'rel': 0,
-      'loop': 1,
-    },
-    videoId: 'Wq1y0FhpgGI',
-    playlist: 'Wq1y0FhpgGI',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
+      playerVars: {
+        'controls': 0,
+        'showinfo': 0,
+        'rel': 0,
+        'loop': 1,
+      },
+      videoId: 'Wq1y0FhpgGI',
+      playlist: 'Wq1y0FhpgGI',
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
 }
 
 function onPlayerReady(event) {

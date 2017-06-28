@@ -125,7 +125,71 @@ a.secondLink {
   height: 100%;
 }
 
-@media all and (max-width: 900px) {
+@media screen and (max-width: 480px) {
+  .navbar {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: #6A6F81;
+    z-index: 200;
+  }
+
+  .navigation {
+    margin-top: -200px;
+    margin-bottom: 0px;
+    top: -10px;
+    transition: margin-top 1s;
+  }
+
+  .nav-item {
+    margin: 20px;
+  }
+
+  .navbar-title {
+    color: white;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    margin-top: 13px;
+    margin-left: 10px;
+    display: block;
+  }
+
+  .navbar-burger {
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    fill: white;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 400;
+    float: right;
+  }
+
+  input[type=checkbox]:checked + .navigation {
+    margin-top: 80px;
+    transition: margin-top 1s;
+  }
+
+  #navbar-trigger {
+    top: -9999px;
+    right: -9999px;
+    position: absolute;
+  }
+
+  .video-background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .block {
     float: none;
     width: 100%;
