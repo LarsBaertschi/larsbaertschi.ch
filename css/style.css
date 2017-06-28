@@ -126,6 +126,12 @@ a.secondLink {
 }
 
 @media screen and (max-width: 480px) {
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+
   .navbar {
     background-color: #6A6F81;
     z-index: 300;
@@ -150,7 +156,7 @@ a.secondLink {
   }
 
   .navigation {
-    margin-top: -235px;
+    margin-top: -250px;
     margin-bottom: 0px;
     top: -10px;
     transition: margin-top 1s;
