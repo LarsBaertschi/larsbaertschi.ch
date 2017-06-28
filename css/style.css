@@ -1,6 +1,4 @@
 html {
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -22,6 +20,7 @@ a {
 
 a.secondLink {
   text-decoration: underline;
+  padding-bottom: 10px;
 }
 
 .page-title {
@@ -35,7 +34,7 @@ a.secondLink {
 }
 
 .image-background {
-  position: absolute;
+  position: fixed;
   background: url(../img/berge.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,13 +46,12 @@ a.secondLink {
 }
 
 .content {
-  position: absolute;
   margin-top: 85vh;
   min-height: 80vh;
   background-color: white;
-  z-index: -200;
   width: 100%;
   padding-left: 2%;
+  position: relative;
 }
 
 .block {
@@ -65,11 +63,13 @@ a.secondLink {
 
 .example-block {
   width: 200px;
-  height: 200px;
   background-color: #cdcdcd;
   float: left;
   margin-right: 20px;
   text-align: center;
+}
+
+.example-block > a {
 }
 
 .example-block-image {
@@ -83,11 +83,11 @@ a.secondLink {
 
 .example-block-description {
   margin-top: 10px;
+  margin-bottom: 10px;
   display: block;
 }
 
 .examples {
-  margin-top: 40px;
   display: inline-block;
 }
 
@@ -136,6 +136,8 @@ a.secondLink {
   .content {
     margin-top: 60px;
     background-color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   .navbar-fixed {
@@ -178,14 +180,14 @@ a.secondLink {
     padding-left: 10px;
     display: block;
     z-index: 1000;
+    float: left;
   }
 
   .navbar-burger {
-    height: 40px;
-    width: 40px;
-    margin-top: 8px;
+    height: 30px;
+    width: 30px;
+    margin-top: 12px;
     margin-right: 10px;
-    position: absolute;
     top: 0;
     left: 80%;
     fill: white;
@@ -194,6 +196,10 @@ a.secondLink {
     background-size: contain;
     z-index: 400;
     float: right;
+  }
+
+  .page-title {
+    display: none;
   }
 
   /* Checkbox-Label-For hack */
@@ -211,11 +217,23 @@ a.secondLink {
   .video-background {
     display: none;
   }
-}
 
-@media screen and (max-width: 900px) {
-  .block {
+  .example-block {
+    margin: 0 auto;
     float: none;
-    width: 100%;
+    width: 60%;
+    margin-top: 20px;
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+  }
+
+  .content {
+    padding-left: 0;
+  }
+
+  .block {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    float: none;
   }
 }
