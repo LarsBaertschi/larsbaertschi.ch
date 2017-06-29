@@ -2,7 +2,7 @@ var player;
 var playerId;
 
 function onYouTubeIframeAPIReady() {
-  if (document.documentElement.clientWidth > 480) {
+  if (document.documentElement.clientWidth > 600) {
     player = new YT.Player('player', {
 
       playerVars: {
