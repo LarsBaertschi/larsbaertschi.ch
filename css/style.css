@@ -27,7 +27,7 @@ h4 {
   font-size: 20px;
 }
 
-a {
+a.link {
   display: inline-block;
   text-decoration: none;
   color: #0A5FFF;
@@ -67,7 +67,7 @@ a.secondLink {
   margin-top: -250px;
   margin-bottom: 0px;
   top: -10px;
-  transition: margin-top 1s;
+  transition: margin-top 0.5s;
   position: fixed;
   z-index: -100;
   background-color: white;
@@ -105,7 +105,7 @@ a.secondLink {
 
 input[type=checkbox]:checked + .navigation {
   margin-top: 70px;
-  transition: margin-top 1s;
+  transition: margin-top 0.5s;
 }
 
 #navbar-trigger {
@@ -256,4 +256,75 @@ form {
 .submit-button {
   width: 100%;
   height: 40px;
+}
+
+/* PC/Tablet */
+@media screen and (min-width: 600px) {
+
+  .navbar {
+    background-color: #6A6F81;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-fixed {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .nav-item {
+    padding: 0;
+    border-bottom-width: 0;
+    float: left;
+    transition: background-color 0.25s;
+  }
+
+  .nav-item:hover {
+    background-color: #54565D;
+    transition: background-color 0.25s;
+  }
+
+  .nav-item > a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+  }
+
+  .navigation {
+    margin-top: 0;
+    top: 0;
+    transition: margin-top 0.5s;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: auto;
+    list-style-type: none;
+    padding: 0;
+    right: 0;
+    background-color: #6A6F81;
+  }
+
+  .navbar-title {
+    color: white;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    padding-top: 13px;
+    padding-left: 10px;
+    display: block;
+    z-index: 1000;
+    float: left;
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+
 }
