@@ -11,7 +11,6 @@ h2 {
   /*font-weight: bold;*/
   font-weight: bold;
   font-size: 30px;
-  margin-top: 0px;
 }
 
 h3 {
@@ -260,23 +259,6 @@ form {
 
 /* PC/Tablet */
 @media screen and (min-width: 600px) {
-
-  .navbar {
-    background-color: #6A6F81;
-    z-index: 300;
-    width: 100%;
-    height: 100%;
-  }
-
-  .navbar-fixed {
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 100;
-  }
-
   .nav-item {
     padding: 0;
     border-bottom-width: 0;
@@ -297,12 +279,10 @@ form {
   }
 
   .navigation {
-    margin-top: 0;
     top: 0;
     transition: margin-top 0.5s;
     position: absolute;
     z-index: 100;
-    background-color: white;
     width: auto;
     list-style-type: none;
     padding: 0;
@@ -310,20 +290,19 @@ form {
     background-color: #6A6F81;
   }
 
-  .navbar-title {
-    color: white;
-    font-size: 30px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: lighter;
-    padding-top: 13px;
-    padding-left: 10px;
-    display: block;
-    z-index: 1000;
-    float: left;
-  }
-
   .navbar-burger {
     display: none;
+  }
+
+  .examples {
+    width: 100%;
+  }
+
+  .example-block {
+    width: 33%;
+    float: left;
+    margin-right: 8%;
+    margin-left: 8%;
   }
 
 
