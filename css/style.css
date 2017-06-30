@@ -95,7 +95,6 @@ a.secondLink {
   margin-right: 10px;
   top: 0;
   left: 80%;
-  fill: white;
   background-image: url(../img/menu.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -193,7 +192,6 @@ input[type=checkbox]:checked + .navigation {
   padding-bottom: 10px;
   display: block;
   text-decoration: none;
-  color:
 }
 
 /* Text */
